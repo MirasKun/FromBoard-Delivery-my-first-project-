@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Formular";
+  src: url("../ofont.ru_Formular.ttf");
+}
 .wrapper__questions {
   height: 554px;
   display: flex;
@@ -82,8 +86,12 @@ footer {
   font-weight: 900;
 }
 .wrapper_footer .footer__header .footer_logo .logo_text {
+  width: 382px;
   font-size: 12px;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper_footer .footer__header .footer_nav ul {
   display: flex;
@@ -124,4 +132,5 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  font-size: 20px;
 }/*# sourceMappingURL=miras.css.map */
