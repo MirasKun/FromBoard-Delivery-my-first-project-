@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Formular";
+    src: url("../ofont.ru_Formular.ttf");
+}
+
+// ------------------------ SECTION__QUESTIONS ----------------------
+
+.wrapper__questions {
+    height: 554px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: #fff;
+    border-radius: 16px;
+
+    .inputs-block {
+        display: grid;
+        grid-template-columns: 237px 237px;
+        grid-template-rows: repeat(5, 48px);
+        gap: 24px;
+        grid-template-areas: 
+        "questions_name questions_email"
+        "questions_number questions_topic"
+        "questions_message questions_message"
+        "questions_message questions_message"
+        "questions_btn questions_btn";
+
+        .questions_name {
+            grid-area: questions_name;
+        }
+        .questions_email {
+            grid-area: questions_email;
+        }
+        .questions_number {
+            grid-area: questions_number;
+        }
+        .questions_topic {
+            grid-area: questions_topic;
+        }
+        .questions_message {
+            grid-area: questions_message;
+            padding-bottom: 75px;
+        }
+        .questions_btn {
+            grid-area: questions_btn;
+            background-color: #8B5CF6;
+            color: #fff;
+            font-weight: 700;
+        }
+        input {
+            padding-left: 12px;
+        }
+
+        input, button {
+            border-radius: 4px;
+        } 
+    }    
+}
+
+
+// ------------------------ FOOTER ----------------------
+footer {
+    background-color: #111827;
+}
+.wrapper_footer {
+    height: 234px;
+    
+    color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    .footer__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 207px;
+        .footer_logo {
+            display: flex;
+            flex-direction: column;
+            .imgBox {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 4px;
+                .footer_img {
+                    width: 50px;
+                    height: 74px;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 900;
+                }
+            }
+            .logo_text {
+                width: 382px;
+                font-size: 12px;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .footer_nav {
+
+            ul {
+                display: flex;
+                gap: 24px;
+
+                li {
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    
+                }
+                li:hover {
+                    color: #8B5CF6;
+                }
+            }
+        }
+        .footer_number {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            gap: 4px;
+            p {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footer__footer {
+        display: flex;
+        justify-content: center;
+        gap: 148px;
+
+        font-size: 12px;
+        .left {
+            font-weight: 300;
+            color: #4B5563;
+        }
+        .right {
+            color: #6B7280;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+
+        }
+    }
+
+}

@@ -1,0 +1,466 @@
+@font-face {
+    font-family: "Formular";
+    src: url("../ofont.ru_Formular.ttf");
+}
+/* ------------------- ОБЩИЕ СТИЛИ ---------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Formular', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+}
+button:hover {
+    background-color: #A78BFA;
+}
+button:active {
+    background-color: #6D28D9;
+}
+li {
+    list-style: none;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #111827;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1536px;
+    margin: 0 auto 72px auto;
+}
+body {
+    background-color: #E5E7EB;
+    height: 3000px;
+}
+input::placeholder{
+    color: #9CA3AF;
+}
+input:hover {
+    border-color: #8B5CF6;
+}
+input {
+    outline-color: #8B5CF6;
+}
+
+
+
+
+
+/* ------------------- HEADER ---------------------- */
+
+header {
+    background-color: #fff;
+}
+
+.wrapper_header {
+    height: 192px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.header_inf {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_box h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+.logo {
+}
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.inf-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 16px;
+    
+}
+.inf-price p {
+    line-height: 24px;
+}
+.vertical-line {
+    width: 0;
+    height: 76px;
+    border: 1px solid #A78BFA;
+}
+
+.phone-num p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #111827;
+}
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav__ul {
+    display: flex;
+    gap: 24px;
+}
+.nav__ul li {
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 700;
+    
+} 
+.nav__ul li:hover {
+    color: #8B5CF6;
+}
+/* .nav__ul li:focus {
+    border-bottom: 2px dashed #8B5CF6 ;
+    color: #ffffff;
+} */
+
+.nav__btn {
+    padding: 12px 31px;
+    border-radius: 4px;
+    background-color: #8B5CF6;
+
+    font-size: 16px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+
+
+/* ------------------------ MAIN ---------------------- */
+
+/* ------------------------ SECTION__DELIVERY ---------------------- */
+
+.delivery {
+}
+
+.wrapper__delivery {
+    height: 584px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.delivery-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    width: 756px;
+    height: 584px;
+}
+.delivery-left__inf {
+    width: 100%;
+    height: 216px;
+}
+.delivery-left__inf > p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.delivery-left__img {
+}
+
+
+.delivery-right {
+    width: 756px;
+    height: 584px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: #fff;
+    border-radius: 16px;
+
+}
+.delivery-right__title {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 24px; */
+
+}
+.delivery-right__title > h3 {
+    font-weight: bold;
+}
+.delivery-right__title > p {
+    line-height: 24px;
+    
+    
+}
+.delivery-right__inpt {
+    display: grid;
+    grid-template-columns: repeat(2, 236px);
+    grid-template-rows: repeat(6, 48px);
+    gap: 24px;
+    grid-template-areas: 
+    "name name"
+    "email number"
+    "total-area weight"
+    "country city"
+    "region speed"
+    "btn btn";
+    transition: 0.2s;
+    
+
+
+
+}
+
+
+.delivery-right__inpt input, .btn {
+    border-radius: 4px;
+    padding-left: 12px;
+}
+.name {
+    grid-area: name;
+}
+.email {
+    grid-area: email;
+}
+.number {
+    grid-area: number;
+}
+.total {
+    grid-area: total;
+}
+.area {
+    grid-area: area;
+}
+.weight {
+    grid-area: weight_;
+}
+.country {
+    grid-area: country;
+}
+.city {
+    grid-area: city;
+}
+.region {
+    grid-area: region_;
+}
+.speed {
+    grid-area: speed;
+}
+.btn {
+    grid-area: btn;
+    background-color: #8B5CF6;
+    color: #F9FAFB;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ------------------------ SECTION__BENEFITS ---------------------- */
+
+
+
+.wrapper__benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 452px;
+    gap: 24px 0;
+    width: 100%;
+}
+
+.image__card__benefits {
+    width: 136px;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__benefits {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 184px;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    padding: 24px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+}
+
+.card__text > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+/* ------------------------ SECTION__BENEFITS ---------------------- */
+
+
+.guarantees {
+}
+.wrapper__guarantees {
+    height: 671px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.title__guarantees {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.title__guarantees > p {
+    width: 756px;
+    line-height: 24px;
+    
+}
+.guarantees__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.guarantees__CaRd {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.guarantees__btn {
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #8B5CF6;
+    color: #fff;
+    border-radius: 12px;
+}
+
+/* ------------------------ SECTION__REWIEWS ---------------------- */
+
+
+.reviews {
+}
+
+.wrapper__reviews {
+    height: 418px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+}
+.arrow {
+}
+.wrapper_text_reviews {
+    height: 100%;
+    width: 1276px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper_text_reviews_blocks {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wrapper_text_reviews_blocks > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 350px;
+    gap: 24px;
+}
+.wrapper_text_reviews_blocks li {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 32px 43px ;
+    position: relative;
+
+
+
+}
+.li_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.li_text > p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.li_text > h6 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #6B7280;
+}
+.kavu {
+    position: absolute;
+    right: 18px;
+    bottom: 40px;
+}
