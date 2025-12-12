@@ -75,9 +75,9 @@ footer {
     gap: 24px;
     .footer__header {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 207px;
+        width: 100%;
         .footer_logo {
             display: flex;
             flex-direction: column;
@@ -136,13 +136,14 @@ footer {
 
     .footer__footer {
         display: flex;
-        justify-content: center;
-        gap: 148px;
+        justify-content: space-between;
+        width: 100%;
 
-        font-size: 12px;
+        font-size: 11px;
         .left {
             font-weight: 300;
             color: #4B5563;
+            width: 1146px;
         }
         .right {
             color: #6B7280;
@@ -152,5 +153,162 @@ footer {
             align-items: end;
         }
     }
+}
 
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1026px;
+        margin: 0 auto;
+    }
+    // ------------------HEADER-----------------
+    .wrapper_header {
+        .header_inf {
+            .contact-box {
+                .phone-num {
+                    h2 {
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+// ------------------SECTION-DELIVERY-----------------
+    .wrapper__delivery {
+        display: flex;
+        flex-direction: column;
+        height: 856px;
+        gap: 40px;
+        margin-top: 48px;
+        .delivery-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            gap: 16px;
+            width: 100%;
+            img {
+                width: 505px;
+                height: 232px;
+            }  
+            .delivery-left__inf {
+                width: 100%;
+                height: 232px;
+                gap: 12px;
+                h2 {
+                    font-size: 30px;
+                    width: 505px;
+                }
+                p {
+                    width: 495px;
+                }
+            }
+        }
+
+        .delivery-right {
+            width: 100%;
+            height: 584px;
+            padding: 24px;
+
+            .delivery-right__inpt {
+                width: 606px;
+
+            }
+        }
+    }
+
+    // ------------------SECTION-BENEFITS-----------------
+
+    .wrapper__benefits {
+        height: 606px;
+        margin-top: 48px;
+        .cards__benefits {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // ------------------SECTION-GUARANTEES-----------------
+
+    .wrapper__guarantees {
+        height: 1102px;
+        margin-top: 48px;
+
+        .guarantees__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // ------------------SECTION-REWIEWS-----------------
+
+    .wrapper__reviews {
+        height: 344px;
+        margin-top: 48px;
+        .wrapper_text_reviews {
+            h3 {
+                margin-bottom: 32px;
+            }
+            .wrapper_text_reviews_blocks {
+                li {
+                    width: 396px;
+                    height: 276px;
+                    padding: 16px 16px;
+                    .kavu {
+                        right: 23px;
+                        bottom: 3px;
+                    }
+                    .li_text {
+                        p {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                        h6 {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+
+    // ------------------SECTION-QUESTIONS-----------------
+
+    .wrapper__questions {
+        margin-top: 48px;
+    }
+
+    // ------------------FOOTER-----------------
+    footer {
+        .container {
+            max-width: 1152px;
+            .wrapper_footer {
+                height: 250px;
+                margin-top: 48px;
+                    .footer__header {
+                        .footer_number {
+                            h2 {
+                                font-size: 30px;
+                            }
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .footer__footer {
+                        .left {
+                            width: 910px;
+                            height: 48px;
+                        }
+                        .right {
+                            width: 242px;
+                            height: 32px;
+                        }
+                    }   
+            }   
+        }
+    }
+    
 }
