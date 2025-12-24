@@ -63,6 +63,16 @@ input {
     outline-color: #8B5CF6;
 }
 
+.hide-before-adapt {
+    display: none;
+}
+.hide-before-adapt-foot {
+    display: none;
+}
+.hide-before-768px {
+    display: none;
+}
+
 
 
 
@@ -142,15 +152,15 @@ header {
     cursor: pointer;
     transition: 0.2s;
     font-weight: 700;
+    position: relative;
     
 } 
 .nav__ul li:hover {
     color: #8B5CF6;
 }
-/* .nav__ul li:focus {
-    border-bottom: 2px dashed #8B5CF6 ;
-    color: #ffffff;
-} */
+.nav__ul li:checked {
+    border-bottom: 2px dashed #8B5CF6;
+}
 
 .nav__btn {
     padding: 12px 31px;
@@ -192,6 +202,7 @@ header {
 }
 .delivery-left__inf > h2 {
     width: 670px;
+    line-height: 36px;
 }
 .delivery-left__inf > p {
     font-size: 20px;
@@ -257,6 +268,7 @@ header {
 .delivery-right__inpt input, .btn {
     border-radius: 4px;
     padding-left: 12px;
+    transition: 0.2s;
 }
 .name {
     grid-area: name;
@@ -353,7 +365,7 @@ header {
 
 
 
-/* ------------------------ SECTION__BENEFITS ---------------------- */
+/* ------------------------ SECTION__GUARANTEES ---------------------- */
 
 
 .guarantees {
@@ -398,6 +410,7 @@ header {
     background-color: #8B5CF6;
     color: #fff;
     border-radius: 12px;
+    transition: 0.2s;
 }
 
 /* ------------------------ SECTION__REWIEWS ---------------------- */

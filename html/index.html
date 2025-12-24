@@ -11,7 +11,6 @@
     <!-- ------------------------ HEADER ------------------------>
     <header>
         <div class="container">
-
             <div class="wrapper_header">
 
                 <div class="header_inf">
@@ -22,31 +21,42 @@
                         <h1>FromBoard Delivery</h1>
                     </div>
                     <div class="contact-box">
-                        <div class="inf-price">
+                        <div class="inf-price hide-in-adapt">
                             <p>Доставляем товары из заграницы в Россию</p>
                             <p>Стоимость от 550 рублей за заказ</p>
                             <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
                         </div>
 
-                        <div class="vertical-line"></div>
+                        <div class="vertical-line hide-in-adapt"></div>
 
                         <div class="phone-num">
                             <h2>+7 (800) 123 45-67</h2>
-                            <p>Звонки по России бесплатны</p>
+                            <p class="hide-in-768px">Звонки по России бесплатны</p>
+                        </div>
+                        <div class="hide-before-768px">
+                            <img src="/icons /Burger.svg" alt="">
                         </div>
                     </div>
                 </div>
 
 
-                <nav class="header__nav">
+                <nav class="header__nav hide-in-768px">
                     <ul class="nav__ul">
-                        <li>Калькулятор</li>
-                        <li>О нас</li>
-                        <li>Гарантии</li>
-                        <li>Отзывы</li>
+                        <li class="li1">Калькулятор</li>
+                        <li class="li2">О нас</li>
+                        <li class="li3">Гарантии</li>
+                        <li class="li4">Отзывы</li>
                     </ul>
                     <button class="nav__btn">Оставить заявку</button>
                 </nav>
+
+                <div class="hide-before-adapt">
+                    <p>Доставляем товары <br>
+                        из заграницы в Россию</p>
+                    <p>Стоимость от 550 рублей <br>
+                        за заказ</p>
+                    <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                </div>
 
             </div>
         </div>
@@ -82,7 +92,7 @@
                         <div class="delivery-right__inpt">
                             <input class="name" type="text" placeholder="Имя" autofocus>
                             <input class="email" type="email" placeholder="Почта">
-                            <input class="number" type="number" placeholder="Телефон">
+                            <input class="number" type="tel" placeholder="Телефон">
                             <input class="total-area" type="text" placeholder="Общая площадь м2">
                             <input class="weight_" type="text" placeholder="Вес, кг">
                             <input class="country" type="text" placeholder="Страна покупки">
@@ -248,7 +258,7 @@
                         <h3>Отзывы</h3>
                         <div class="wrapper_text_reviews_blocks">
                             <ul>
-                                <li>
+                                <li class="hide-in-adapt">
                                     <div class="li_text">
                                         <p>
                                             Я заказала последний iPhone из США через 
@@ -310,6 +320,14 @@
     <footer>
         <div class="container">
             <div class="wrapper_footer">
+                <nav class="footer_nav hide-before-adapt-foot">
+                        <ul>
+                            <li>Калькулятор</li>
+                            <li>О нас</li>
+                            <li>Гарантии</li>
+                            <li>Отзывы</li>
+                        </ul>
+                    </nav>
                 <div class="footer__header">
 
                     <div class="footer_logo">
@@ -324,7 +342,7 @@
                         </div>
                     </div>
                     
-                    <nav class="footer_nav">
+                    <nav class="footer_nav hide-in-adapt">
                         <ul>
                             <li>Калькулятор</li>
                             <li>О нас</li>
@@ -339,11 +357,15 @@
                     </div>
                 </div>
                 <div class="footer__footer">
-                    <p class="left">НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что цены носят информационный и ознакомительный характер, а значит ни в какой мере не являются публичной 
-                        офертой, которая определена в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности, орфографические и иные ошибки, она не является полной, окончательно и исчерпывающей
+                    <p class="left">НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить
+                        внимание на то, что цены носят информационный и ознакомительный
+                        характер, а значит ни в какой мере не являются публичной 
+                        офертой, которая определена в ст. 437 ГК РФ. Вся информация
+                        на сайте может содержать неточности, орфографические и 
+                        иные ошибки, она не является полной, окончательно и исчерпывающей
 
                     </p>
-                    <p class="right">Разработкой макета занимался <br>
+                    <p class="right">Разработкой макета занимался 
                         <span><a href="http://" target="_blank">Васильев Александр</a> | 
                         <a href="http://" target="_blank">Что-то на IT’шном</a></span>
                     </p>
